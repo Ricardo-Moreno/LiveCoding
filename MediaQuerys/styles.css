@@ -1,0 +1,100 @@
+/* Estilos comunes para todos los tamaños de pantalla */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  font-size: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+  footer {
+    color: green;
+  }
+}
+
+/* Media query para pantallas medianas y grandes */
+@media (min-width: 370px) and (max-width: 600px) {
+  header {
+    justify-content: space-between;
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  footer {
+    padding: 20px;
+    color: red;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 369px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  footer {
+    padding: 20px;
+    color: yellow;
+  }
+}
